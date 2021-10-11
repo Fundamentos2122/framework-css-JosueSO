@@ -1,0 +1,149 @@
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 0.25em 0.75em;
+    font-size: 1em;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25em;
+    text-decoration: none;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--color-primary-darked);
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: var(--color-secondary);
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: var(--color-secondary-darked);
+}
+
+.btn-success {
+    color: #fff;
+    background-color: var(--color-success);
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: var(--color-success-darked);
+}
+
+.btn-info {
+    color: #fff;
+    background-color: var(--color-info);
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: var(--color-info-darked);
+}
+
+.btn-warning {
+    color: #222;
+    background-color: var(--color-warning);
+}
+
+.btn-warning:hover {
+    color: #fff;
+    background-color: var(--color-warning-darked);
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: var(--color-danger);
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: var(--color-danger-darked);
+}
+
+.btn-light {
+    color: #222;
+    background-color: var(--color-light);
+}
+
+.btn-light:hover {
+    color: #222;
+    background-color: var(--color-light-darked);
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: var(--color-dark);
+}
+
+.btn-dark:hover {
+    color: #fff;
+    background-color: var(--color-dark-darked);
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.table th,
+.table td {
+    padding: 0.5em;
+    border-top: 1px solid var(--border-color);
+}
+
+.table-primary {
+    color: #fff;
+    background-color: var(--color-primary-clear);
+}
+
+.table-primary th {
+    background-color: var(--color-primary);
+}
+
+.table-secondary {
+    background-color: var(--color-secondary-clear);
+}
+
+.table-success {
+    background-color: var(--color-success-clear);
+}
+
+.table-info {
+    background-color: var(--color-info-clear);
+}
+
+.table-warning {
+    background-color: var(--color-warning-clear);
+}
+
+.table-danger {
+    background-color: var(--color-danger-clear);
+}
+
+.table-light {
+    background-color: var(--color-light);
+}
+
+.table-dark {
+    color: #fff;
+    background-color: var(--color-dark);
+}
+
+.table-dark th {
+    color: #fff;
+    background-color: var(--color-dark-darked);
+}
