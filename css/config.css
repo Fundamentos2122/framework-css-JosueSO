@@ -29,4 +29,5 @@ html, body { margin: 0; }
     --color-dark: #343a40;
     --color-dark-darked: #191c1f;
     --border-color: #dee2e6;
+    --container-padding: 1em;
 }
