@@ -159,6 +159,7 @@
     overflow-y: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    display: none;
 }
 
 .modal::-webkit-scrollbar {
@@ -196,6 +197,18 @@
 
 .modal-footer > * {
     margin: 0.25em;
+}
+
+.close {
+    border: none;
+    background-color: transparent;
+    color: var(--color-light-darked);
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    cursor: pointer;
+    color: var(--color-dark);
 }
 
 .navbar {
