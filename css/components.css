@@ -159,6 +159,7 @@
     overflow-y: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    display: none;
 }
 
 .modal::-webkit-scrollbar {
