@@ -213,23 +213,37 @@
 
 .navbar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--color-light);
+    padding: 0.5em 1em;
 }
 
 .navbar-brand {
     display: inline-block;
-    padding: 1em;
     text-decoration: none;
     color: var(--color-dark);
     font-weight: 600;
     font-size: 1.25em;
+    padding: 0.5em 0.75em;
+}
+
+.navbar-toggle {
+    padding: 0.5em;
+    height: fit-content;
+}
+
+.navbar-collapse {
+    display: none;
+    flex-grow: 1;
+    flex-basis: 100%;
 }
 
 .navbar-nav {
-    display: flex;
+    display: block;
     margin: 0;
-    padding: 1em;
+    padding: 0;
 }
 
 .navbar-nav .nav-item {
@@ -272,4 +286,20 @@
 
 .show {
     display: block;
+}
+
+@media (min-width: 768px) {
+    .navbar-toggle {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: block;
+        flex-basis: auto;
+    }
+
+    .navbar-nav {
+        display: flex;
+        padding-left: 40px;
+    }
 }
