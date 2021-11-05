@@ -2,6 +2,11 @@ const attr_toggle = "data-toggle";
 const attr_target = "data-target";
 const attr_dismiss = "data-dismiss";
 const class_modal = "modal";
+const dropdown_class = "dropdown";
+const dropdown_toggle = "dropdown-toggle";
+const dropdown_menu_class = "dropdown-menu";
+const navbar_toggle = "navbar-toggle";
+const menu_collapse_class = "navbar-collapse";
 const class_show = "show";
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -17,6 +22,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
     modal_close_buttons.forEach(element => {
         element.addEventListener("click", CloseModal);
+    });
+
+    //Dropdown del submenú
+    let dropdown_buttons = document.querySelectorAll(`.${dropdown_class} > .${dropdown_toggle}`);
+
+    dropdown_buttons.forEach(element => {
+        element.addEventListener("click", ToggleDropdown);
+    });
+
+    //Collapse del menú
+    let collapse_menu_buttons = document.querySelectorAll(`.${navbar_toggle}`);
+
+    collapse_menu_buttons.forEach(element => {
+        element.addEventListener("click", ToggleMenu);
     });
 });
 
@@ -39,7 +58,7 @@ function OpenModal(e) {
  * Cerrar un modal
  * @param {PointerEvent} e 
  */
- function CloseModal(e) {
+function CloseModal(e) {
     //Obtener el selector del elemento a ocultar
     let modal_selector = e.target.getAttribute(attr_dismiss);
 
@@ -48,4 +67,28 @@ function OpenModal(e) {
 
     //Quitar la clase para mostrar el modal
     modal.classList.remove(class_show);
+}
+
+/**
+ * Abrir y cerrar el submenú
+ * @param {PointerEvent} e 
+ */
+function ToggleDropdown(e) {
+    e.preventDefault();
+
+    let submenu = e.target.parentNode.querySelector(`.${dropdown_menu_class}`);
+
+    submenu.classList.toggle(class_show);
+}
+
+/**
+ * Abrir y cerrar el menú
+ * @param {PointerEvent} e 
+ */
+function ToggleMenu(e) {
+    e.preventDefault();
+
+    let menu = e.target.parentNode.querySelector(`.${menu_collapse_class}`);
+
+    menu.classList.toggle(class_show);
 }
