@@ -30,4 +30,9 @@ html, body { margin: 0; }
     --color-dark-darked: #191c1f;
     --border-color: #dee2e6;
     --container-padding: 1em;
+    --size-1: 0.25em;
+    --size-2: 0.5em;
+    --size-3: 1em;
+    --size-4: 1.5em;
+    --size-5: 3em;
 }
