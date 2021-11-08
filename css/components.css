@@ -193,6 +193,7 @@
     padding: 1em;
     display: flex;
     justify-content: space-between;
+    border-bottom-width: 1px;
 }
 
 .modal-title {
@@ -201,15 +202,18 @@
 
 .modal-body {
     padding: 1em;
-    border-width: 1px 0;
-    border-style: solid;
-    border-color: var(--border-color);
 }
 
 .modal-footer {
     padding: 1em;
     display: flex;
     justify-content: flex-end;
+    border-top-width: 1px;
+}
+
+.modal-body, .modal-footer {
+    border-style: solid;
+    border-color: var(--border-color);
 }
 
 .modal-footer > * {
