@@ -364,47 +364,55 @@ textarea {
 
 .alert {
     padding: 0.75em 1.25em;
-    border: 1px solid black;
+    border: 1px solid transparent;
     border-radius: 0.25em;
     margin-bottom: 1em;
 }
 
 .alert-primary {
+    color: var(--color-primary-darked);
     background-color: var(--color-primary-clear);
-    color: var(--color-primary);
+    border-color: var(--color-primary-clear);
 }
 
 .alert-secondary {
+    color: var(--color-secondary-darked);
     background-color: var(--color-secondary-clear);
-    color: var(--color-secondary);
+    border-color: var(--color-secondary-clear);
 }
 
 .alert-success {
+    color: var(--color-success-darked);
     background-color: var(--color-success-clear);
-    color: var(--color-success);
+    border-color: var(--color-success-clear);
 }
 
 .alert-info {
+    color: var(--color-info-darked);
     background-color: var(--color-info-clear);
-    color: var(--color-info);
+    border-color: var(--color-info-clear);
 }
 
 .alert-warning {
+    color: var(--color-warning-darked);
     background-color: var(--color-warning-clear);
-    color: var(--color-warning);
+    border-color: var(--color-warning-clear);
 }
 
 .alert-danger {
+    color: var(--color-danger-darked);
     background-color: var(--color-danger-clear);
-    color: var(--color-danger);
+    border-color: var(--color-primary-darked);
 }
 
 .alert-light {
+    color: var(--color-dark);
     background-color: var(--color-light);
-    color: var(--color-light-darked);
+    border-color: var(--color-light);
 }
 
 .alert-dark {
+    color: var(--color-light);
     background-color: var(--color-dark);
-    color: var(--color-dark-darked);
+    border-color: var(--color-dark);
 }
