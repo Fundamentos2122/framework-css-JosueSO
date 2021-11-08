@@ -30,6 +30,10 @@
     background-color: var(--color-dark);
 }
 
+.bg-white {
+    background-color: white;
+}
+
 .border {
     border: 1px solid var(--border-color);
 }
