@@ -400,7 +400,7 @@ textarea {
 .alert-danger {
     color: var(--color-danger-darked);
     background-color: var(--color-danger-clear);
-    border-color: var(--color-primary-darked);
+    border-color: var(--color-danger-clear);
 }
 
 .alert-light {
