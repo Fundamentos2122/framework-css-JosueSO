@@ -29,6 +29,8 @@ html, body { margin: 0; }
     --color-dark: #343a40;
     --color-dark-darked: #191c1f;
     --border-color: #dee2e6;
+    --input-color: #b8b8b8;
+    --input-shadow: #67b7ec;
     --container-padding: 1em;
     --size-1: 0.25em;
     --size-2: 0.5em;

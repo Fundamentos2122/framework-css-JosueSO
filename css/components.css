@@ -151,13 +151,13 @@
 .close {
     background-color: transparent;
     border: none;
-    color: gray;
+    color: var(--border-color);
     transition: border 0.15s ease-in-out;
 }
 
 .close:hover {
     cursor: pointer;
-    border: 1px solid gray;
+    border: 1px solid var(--border-color);;
     border-radius: 10%;
 }
 
@@ -211,7 +211,7 @@
     border-top-width: 1px;
 }
 
-.modal-body, .modal-footer {
+.modal-header, .modal-footer {
     border-style: solid;
     border-color: var(--border-color);
 }
@@ -344,20 +344,67 @@ textarea {
 .form-control {
     padding: 0.5em 1em;
     width: 100%;
-    border: 1px solid lightgrey;
+    border: 1px solid var(--border-color);
     border-radius: 0.25em;
     font-size: 1em;
-    color: dimgray;
+    color: var(--input-color);
     transition: border 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .form-control:focus {
-    border: 1px solid lightskyblue;
+    border: 1px solid var(--input-shadow);
     outline: none;
-    box-shadow: 1px 1px 10px lightskyblue;
+    box-shadow: 1px 1px 10px var(--input-shadow);
 }
 
 .form-check-input {
     position: absolute;
     margin-left: -1.25em;
+}
+
+.alert {
+    padding: 0.75em 1.25em;
+    border: 1px solid black;
+    border-radius: 0.25em;
+    margin-bottom: 1em;
+}
+
+.alert-primary {
+    background-color: var(--color-primary-clear);
+    color: var(--color-primary);
+}
+
+.alert-secondary {
+    background-color: var(--color-secondary-clear);
+    color: var(--color-secondary);
+}
+
+.alert-success {
+    background-color: var(--color-success-clear);
+    color: var(--color-success);
+}
+
+.alert-info {
+    background-color: var(--color-info-clear);
+    color: var(--color-info);
+}
+
+.alert-warning {
+    background-color: var(--color-warning-clear);
+    color: var(--color-warning);
+}
+
+.alert-danger {
+    background-color: var(--color-danger-clear);
+    color: var(--color-danger);
+}
+
+.alert-light {
+    background-color: var(--color-light);
+    color: var(--color-light-darked);
+}
+
+.alert-dark {
+    background-color: var(--color-dark);
+    color: var(--color-dark-darked);
 }
