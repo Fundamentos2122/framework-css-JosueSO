@@ -189,6 +189,12 @@
     flex-direction: column;
 }
 
+.modal-header, .modal-footer {
+    border-width: 0;
+    border-style: solid;
+    border-color: var(--border-color);
+}
+
 .modal-header {
     padding: 1em;
     display: flex;
@@ -209,11 +215,6 @@
     display: flex;
     justify-content: flex-end;
     border-top-width: 1px;
-}
-
-.modal-header, .modal-footer {
-    border-style: solid;
-    border-color: var(--border-color);
 }
 
 .modal-footer > * {
