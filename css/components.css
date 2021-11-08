@@ -291,10 +291,6 @@
     background-color: var(--color-light);
 }
 
-.show {
-    display: block;
-}
-
 @media (min-width: 768px) {
     .navbar-toggle {
         display: none;
@@ -417,4 +413,8 @@ textarea {
     color: var(--color-light);
     background-color: var(--color-dark);
     border-color: var(--color-dark);
+}
+
+.show {
+    display: block;
 }
